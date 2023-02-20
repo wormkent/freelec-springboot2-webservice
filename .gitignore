@@ -1,3 +1,6 @@
+#Create by .ignore support plugin
+.idea
+
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
