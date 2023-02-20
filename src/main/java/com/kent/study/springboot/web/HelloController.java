@@ -17,5 +17,7 @@ public class HelloController {
     public HelloResponseDto helloResponseDto(@RequestParam("name") String name, @RequestParam("amount") int amount){
         return new HelloResponseDto(name, amount);
     }
-
 }
+
+//@RequestParam("name")
+//외부에서 API로 넘긴 파라미터를 가져오는 어노테이션
