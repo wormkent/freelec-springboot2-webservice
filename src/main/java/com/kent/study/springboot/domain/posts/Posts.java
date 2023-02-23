@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity{ //JPA Auditing 어노테이션을 활성화할 수 있게됨.
 
     //JPA를 사용하면 DB 데이터에 쿼리를 날리기보다 Entity 클래스 수정을 통해 작업한다.
 
