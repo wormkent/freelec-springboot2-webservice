@@ -1,13 +1,21 @@
 package com.kent.study.springboot.web;
 
+import com.kent.study.springboot.service.posts.PostsService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+@RequiredArgsConstructor
 @Controller
 public class IndexController {
 
+    private final PostsService postsService;
+
     @GetMapping("/")
-    public String index(){
+    public String index(Model model){
+
+        model.addAttribute("posts", postsService.findAllDesc());
         return "index"; //src/main/resources/templates/index.mustache -> 뷰리졸버가 처리
     }
 
