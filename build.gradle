@@ -41,8 +41,12 @@ buildscript{
         testImplementation('org.projectlombok:lombok')
         testAnnotationProcessor('org.projectlombok:lombok')
 
+        //스프링 부트용 Spring Data Jpa 추상화 라이브러리, 스프링 부트 버전에 맞춰 자동으로 JPA 관련 라이브러리 버전 관리해줌
         implementation('org.springframework.boot:spring-boot-starter-data-jpa')
         implementation("org.mariadb.jdbc:mariadb-java-client")
         implementation('com.h2database:h2')
+
+        //mustache 스타터 의존성 등록
+        implementation('org.springframework.boot:spring-boot-starter-mustache')
     }
 
