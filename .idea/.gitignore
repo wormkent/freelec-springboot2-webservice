@@ -7,4 +7,4 @@
 /dataSources/
 /dataSources.local.xml
 
-application-oauth.properties
+.application-oauth.properties
